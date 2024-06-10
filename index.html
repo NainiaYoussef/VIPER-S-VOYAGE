@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viper's Voyage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-menu">
+        <h1 id="welcome-message">WELCOME TO VIPER'S VOYAGE</h1>
+        <div class="snake-animation"></div>
+        <button class="menu-btn" id="start-btn">START GAME</button>
+        <button class="menu-btn" id="buy-skins-btn">BUY SKINS</button>
+        <button class="menu-btn" id="score-btn">SCORE</button>
+        <button class="menu-btn" id="exit-btn">EXIT</button>
+    </div>
+    <div id="game-container" style="display: none;">
+        <div id="coin-counter">Coins: 0</div>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+    </div>
+    <div id="score-container" style="display: none;">
+        <h2>Your Scores</h2>
+        <ul id="score-list"></ul>
+        <button id="back-btn">BACK</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

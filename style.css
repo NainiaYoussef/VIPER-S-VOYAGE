@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+#main-menu, #score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #888;
+}
+
+.menu-btn {
+    width: 200px;
+    height: 40px;
+}
+
+canvas {
+    border: 1px solid #fff;
+}
+
+#coin-counter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+}
+
+#game-container {
+    position: relative;
+}
+
+@keyframes flashing {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#welcome-message {
+    animation: flashing 1s infinite;
+}
+
+.snake-animation {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    animation: snakeMove 3s infinite alternate;
+}
+
+@keyframes snakeMove {
+    0% { left: 50%; }
+    100% { left: 80%; }
+}
